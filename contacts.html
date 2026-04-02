@@ -2,37 +2,91 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Glen Joash</title>
 
 <style>
 body {
-    font-family: Arial;
-    background: #2c5364;
-    color: white;
-    text-align: center;
     margin: 0;
-}
-
-.container {
-    padding: 50px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #333;
 }
 
 nav {
-    background: black;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.7);
 }
 
 nav a {
     color: white;
-    margin: 10px;
     text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-.box {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.contact-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #1f4037;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #1f4037;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #14532d;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #1f4037;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -40,21 +94,40 @@ nav a {
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
+    <h2 style="color:white;">Glen Joash</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+    </div>
 </nav>
 
 <div class="container">
+    <div class="contact-box">
 
-<h1>Contact Me</h1>
+        <h1>Contact Me</h1>
 
-<div class="box">
-<p>Email: ericgachongo@gmail.com</p>
-<p>Phone: 07XXXXXXXX</p>
-<p>Location: Nairobi, Kenya</p>
-<p>GitHub: github.com/ericgachongo</p>
-<p>LinkedIn: linkedin.com/in/ericgachongo</p>
-</div>
+        <div class="info">
+            <p><strong>Name:</strong> Glen Joash</p>
+            <p><strong>Email:</strong> glenjoash@email.com</p>
+            <p><strong>Phone:</strong> 07XXXXXXXX</p>
+            <p><strong>GitHub:</strong> github.com/glenjoash</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/glenjoash</p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+        </div>
 
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="footer">
+            <p><a href="index.html">← Back to Home</a></p>
+        </div>
+
+    </div>
 </div>
 
 </body>
